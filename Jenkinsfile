@@ -22,6 +22,9 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Package') {
+            steps {
+                sh 'mvn package'
     }
     post {
         success {
